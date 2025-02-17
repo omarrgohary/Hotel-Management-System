@@ -1,0 +1,123 @@
+-- use hms;
+-- -----------------------------------------------------------------------------------
+-- create schema hms
+-- -----------------------------------------------------------------------------------
+-- CREATE TABLE user (
+--     id INT AUTO_INCREMENT PRIMARY KEY,
+--     email VARCHAR(255),
+--     fname VARCHAR(50),
+--     lname VARCHAR(50),
+--     password VARCHAR(255),
+--     Dob DATE,
+--     ssn VARCHAR(100)
+-- );
+-- -----------------------------------------------------------------------------------
+-- CREATE TABLE user_phone (
+--     id INT,
+--     phone VARCHAR(15),
+--     PRIMARY KEY (id, phone),
+--     CONSTRAINT fk_user FOREIGN KEY (id) REFERENCES user(id)
+-- );
+-- -----------------------------------------------------------------------------------
+-- CREATE TABLE room (
+--     room_num INT PRIMARY KEY,
+--     availability bool
+-- );
+-- -----------------------------------------------------------------------------------
+-- INSERT INTO room (room_num, availability) VALUES
+-- (1, 1),
+-- (2, 1),
+-- (3, 1),
+-- (4, 1),
+-- (5, 1),
+-- (6, 1),
+-- (7, 1),
+-- (8, 1),
+-- (9, 1),
+-- (10, 1),
+-- (11, 1),
+-- (12, 1),
+-- (13, 1),
+-- (14, 1),
+-- (15, 1),
+-- (16, 1),
+-- (17, 1),
+-- (18, 1),
+-- (19, 1),
+-- (20, 1);
+-- -------------------------------------------------------------------------------------------------
+-- CREATE TABLE review (
+--     review_no INT AUTO_INCREMENT PRIMARY KEY,
+--     descriptions VARCHAR(1000),
+--     id INT,
+--     FOREIGN KEY (id) REFERENCES user(id)
+-- );
+-- ----------------------------------------------------------------------------
+-- CREATE TABLE employee (
+--     empid INT AUTO_INCREMENT PRIMARY KEY,
+--     fname VARCHAR(50),
+--     lname VARCHAR(50),
+--     pass VARCHAR(255),
+--     adminn bool,
+--     st_date DATE,
+--     depname VARCHAR(100),
+--     FOREIGN KEY (depname) REFERENCES department(depname)
+-- );
+-- -------------------------------------------------------------------------------------------------------------------
+-- INSERT INTO employee (fname, lname, pass, adminn, st_date, depname) 
+-- VALUES
+--     ('Ahmed', 'Hassan', SHA2('000000', 256), 1, '2024-01-01', 'IT'),
+--     ('Mona', 'Abdelrahman', SHA2('101010', 256), 0, NULL, 'HR'),
+--     ('Omar', 'Fathy', SHA2('202020', 256), 1, '2022-08-22', 'Finance'),
+--     ('Nadia', 'Mahmoud', SHA2('303030', 256), 1, '2022-07-30', 'Marketing'),
+--     ('Tamer', 'Shawky', SHA2('404040', 256), 1, NULL, 'IT'),
+--     ('Yasmin', 'Rashid', SHA2('505050', 256), 0, NULL, 'HR'),
+--     ('Karim', 'Said', SHA2('606060', 256), 0, NULL, 'Finance'),
+--     ('Hassan', 'Ali', SHA2('707070', 256), 0, NULL, 'Marketing'),
+--     ('Layla', 'Gaber', SHA2('808080', 256), 1, NULL, 'IT'),
+--     ('Mohamed', 'Ibrahim', SHA2('909090', 256), 0, NULL, 'HR'),
+--     ('Nour', 'Salah', SHA2('100100', 256), 0, NULL, 'Finance'),
+--     ('Khaled', 'Abdelaziz', SHA2('110110', 256), 0, NULL, 'Marketing'),
+--     ('Fatma', 'Farouk', SHA2('120120', 256), 1, NULL, 'IT'),
+--     ('Hassan', 'Sayed', SHA2('130130', 256), 1, '2024-06-01', 'HR'),
+--     ('Salma', 'Mansour', SHA2('140140', 256), 0, NULL, 'Finance');
+
+-- ---------------------------------------------------------------------------------
+-- CREATE TABLE department (
+--     depname VARCHAR(100) PRIMARY KEY,
+--     managerid INT,
+--     FOREIGN KEY (managerid) REFERENCES employee(empid)
+-- );
+-- ---------------------------------------------------------------------------------
+-- INSERT INTO department (depname, managerid)
+-- VALUES
+--     ('IT', 1),
+--     ('Finance', 3),
+--     ('Marketing', 4),
+--     ('HR', 14);
+-- -----------------------------------------------------------------------------------
+-- CREATE TABLE book (
+--     book_id INT AUTO_INCREMENT PRIMARY KEY, 
+--     id INT, 
+--     room_num INT, 
+--     check_in DATE, 
+--     check_out DATE, 
+--     email VARCHAR(255), 
+--     phone VARCHAR(15), 
+--     no_of_rooms INT, 
+--     days INT,
+--     FOREIGN KEY (id) REFERENCES user(id),
+--     FOREIGN KEY (room_num) REFERENCES room(room_num)
+-- );
+-- -------------------------------------------------------------------------------
+-- use hms;
+-- Alter table user
+-- add column token varchar(100)
+-- -------------------------------------------------------------------------------
+-- use hms;
+-- Alter table user
+-- add column TokenExpiry datetime
+-- -------------------------------------------------------------------------------
+
+
+
