@@ -46,16 +46,6 @@ Features
 
 
 -----------------------------------------------------------------------------------------------------------------------
-   
-Installation & SetupClone the Repository:
-  git clone https://github.com/your-username/Hotel-Management-System.git
-
------------------------------------------------------------------------------------------------------------------------
-
-Navigate to the Project Directory:
-  cd Hotel-Management-System
-
------------------------------------------------------------------------------------------------------------------------
 
 Setup the Database:
   Import the provided SQL database file into MySQL Workbench.
@@ -76,10 +66,12 @@ Future Enhancements :
 
 -----------------------------------------------------------------------------------------------------------------------
 
-LicenseThis project is open-source and available under the MIT License.
+License :
+  This project is open-source and available under the MIT License.
 
 -----------------------------------------------------------------------------------------------------------------------
 
-ContactFor any inquiries or contributions, please contact Omar El Gohary at omarrmgohary@gmail.com .
+ContactFor any inquiries or contributions :
+  please contact Omar El Gohary at omarrmgohary@gmail.com .
 
 -----------------------------------------------------------------------------------------------------------------------
