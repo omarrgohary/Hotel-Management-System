@@ -11,7 +11,7 @@ UsedFrontend: HTML, CSS
 Backend: C#, ASP.NET
 Database: SQL, MySQL Workbench
 
------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 
 Features
 1. Home PageServes as the entry point to the application, providing an overview and navigation to different sections.
