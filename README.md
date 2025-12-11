@@ -72,6 +72,7 @@ License :
 -----------------------------------------------------------------------------------------------------------------------
 
 ContactFor any inquiries or contributions :
-  please contact Omar El Gohary at omarrmgohary@gmail.com .
+Omar El Gohary | Linkedin: linkedin.com/in/omarelgohary2003 
+Youssef Azmy   | Linkedin: linkedin.com/in/youssef-azmy/
 
 -----------------------------------------------------------------------------------------------------------------------
