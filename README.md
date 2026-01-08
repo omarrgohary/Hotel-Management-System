@@ -1,78 +1,113 @@
-Hotel Management System Web Application 
------------------------------------------------------------------------------------------------------------------------
+# Hotel Management System Web Application
 
-Overview : 
-The Hotel Management System is a web application designed to streamline hotel operations by providing efficient management of employee roles, room bookings, and customer interactions. The system allows employees to access relevant functionalities based on their roles and provides users with a seamless experience for booking rooms and submitting reviews.
+---
 
------------------------------------------------------------------------------------------------------------------------
+## Overview
 
-Technologies :
-UsedFrontend: HTML, CSS
-Backend: C#, ASP.NET
-Database: SQL, MySQL Workbench
+The Hotel Management System is a web-based application designed to streamline hotel operations by efficiently managing employee roles, room bookings, and customer interactions.
+The system provides role-based access control for employees and a seamless booking and review experience for hotel guests.
 
-------------------------------------------------------------------------------------------------------------------------
+---
 
-Features
-1. Home PageServes as the entry point to the application, providing an overview and navigation to different sections.
-2. Employee LoginEmployees can log in with their credentials and access different dashboards based on their roles:
-  Admin Role :
-    View and manage all employee data in the database.
-    Manage departments and reviews.
-    View and manage booked and available rooms.
-    Cancel bookings or book rooms for customers.
-  Employee Role :
-    View customer reviews.
-    View available rooms.
------------------------------------------------------------------------------------------------------------------------
-   
-3. User Login & Sign-Up :
-    New users can register using the SignUp page.
-    Existing users can log in with their credentials through the UserLogin page.
- -----------------------------------------------------------------------------------------------------------------------
-    
-4. Password Reset :
-  Users can reset their password by entering their registered email in the forgotpass page.
-  If the email exists in the database:
-    A verification token is generated and stored in the database, valid for one hour.
-    An email with a password reset link is sent to the user.
------------------------------------------------------------------------------------------------------------------------
+## Technologies Used
 
-5. User Dashboard After login :
-  The user is redirected to the Room Gallery.
-  Users can navigate to:
-    Booking Page: To book a room.
-    Review Page: To submit a review about their stay.
+* **Frontend:** HTML, CSS
+* **Backend:** C#, ASP.NET
+* **Database:** SQL, MySQL Workbench
 
+---
 
------------------------------------------------------------------------------------------------------------------------
+## Features
 
-Setup the Database:
-  Import the provided SQL database file into MySQL Workbench.
-  Configure the database connection settings in the application.
+### 1. Home Page
 
------------------------------------------------------------------------------------------------------------------------
+* Serves as the entry point to the application
+* Provides an overview of the system and navigation to key sections
 
-Run the Application:
-  Open the project in Visual Studio.
-  Build and run the application.
+---
 
------------------------------------------------------------------------------------------------------------------------
+### 2. Employee Authentication and Role-Based Access
 
-Future Enhancements :
-  Implement a reporting dashboard for admins.
-  Enhance user experience with an improved UI/UX.
-  Integrate payment gateway for room bookings.
+Employees authenticate using secure credentials and are redirected to dashboards based on their assigned roles.
 
------------------------------------------------------------------------------------------------------------------------
+#### Admin Role
 
-License :
-  This project is open-source and available under the MIT License.
+* View and manage employee records
+* Manage departments and customer reviews
+* View and manage booked and available rooms
+* Book rooms or cancel reservations on behalf of customers
 
------------------------------------------------------------------------------------------------------------------------
+#### Employee Role
 
-ContactFor any inquiries or contributions :
-Omar El Gohary | Linkedin: linkedin.com/in/omarelgohary2003 
-Youssef Azmy   | Linkedin: linkedin.com/in/youssef-azmy/
+* View customer reviews
+* View available rooms
+
+---
+
+### 3. User Registration and Login
+
+* New users can register through the sign-up page
+* Existing users can log in using the user login page
+
+---
+
+### 4. Password Reset Functionality
+
+* Users can request a password reset using their registered email address
+* If the email exists in the database:
+
+  * A verification token is generated and stored
+  * The token remains valid for one hour
+  * A password reset link is sent via email
+
+---
+
+### 5. User Dashboard
+
+After successful login:
+
+* Users are redirected to the Room Gallery
+* Navigation options include:
+
+  * **Booking Page:** Book available rooms
+  * **Review Page:** Submit feedback about their stay
+
+---
+
+## Database Setup
+
+* Import the provided SQL database file into **MySQL Workbench**
+* Configure the database connection settings within the application
+
+---
+
+## Running the Application
+
+* Open the project in **Visual Studio**
+* Build and run the application
+
+---
+
+## Future Enhancements
+
+* Implement an administrative reporting dashboard
+* Improve user interface and overall user experience
+* Integrate a payment gateway for online room bookings
+
+---
+
+## License
+
+This project is open-source and licensed under the **MIT License**.
+
+---
+
+## Authors : 
+Omar EL Gohary
+- **LinkedIn:** [linkedin.com/in/omarelgohary2003](https://www.linkedin.com/in/omarelgohary2003/)
+* **Email:** [omarrmgohary@gmail.com](mailto:omarrmgohary@gmail.com)
+
+Youssef Azmy
+- **LinkedIn:** [linkedin.com/in/omarelgohary2003](https://www.linkedin.com/in/youssef-azmy/)
 
 -----------------------------------------------------------------------------------------------------------------------
